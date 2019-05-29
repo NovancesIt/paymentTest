@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cerballiance Espace Paiement</title>
+    <!-- To add in order to scale the view for mobiles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+  </head>
+  <body>
+    <!-- <% let modalTest = true %> -->
+    <div class="row" id="shop-header">
+      <div class="col-12">
+        <img id="logo-header" src="/images/logoPNG.png" alt=""> Cerballiance - Paiment en ligne
+      </div>
+    </div>
+    <!-- FIND INVOICE AREA -->
+    <div class="home">
+          <div class="col-12 col-sm-6 text-center">
+            <div class="formArea">
+              <h4 class="titleForm">Identifiez-vous</h4>
+              <form action="/log" method="POST">
+                <div class="form-group">
+                  <label for="exampleInputInvoice">Veuillez saisir le N° de Facture</label>
+                  <input name="invoiceFromFront" type="text" class="form-control" id="exampleInvoice" placeholder="N° de Facture">
+                  <small id="invoiceHelp" class="form-text text-muted">Vous trouverez ces informations sur le SMS
+                  reçu</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEAmount">Veuillez saisir le montant de la facture</label>
+                  <input name="amountFromFront" type="text" class="form-control" id="exampleInputAmount" aria-describedby="amountHelp" placeholder="Montant de la facture">
+                  <small id="amountHelp" class="form-text text-muted">Vous trouverez ces informations sur le SMS reçu</small>
+                </div>
+                <button type="submit" class="btn btn-info">Confirmer l'identité</button>
+              </form>
+            </div>
+          </div>
+      </div>
+    <!--Script Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
